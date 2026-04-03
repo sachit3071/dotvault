@@ -37,8 +37,9 @@ You can keep adding:
 ## ⚙️ Setup (2 steps)
 
 ### 1️⃣ Clone the repo
+```
 git clone <your-repo-url> ~/dotvault
-
+```
 ---
 
 ### 2️⃣ Link it to your shell
@@ -46,25 +47,27 @@ git clone <your-repo-url> ~/dotvault
 #### Linux (bash)
 echo '
 # Load dotvault
-if [ -d ~/dotvault/functions ]; then
-  for file in ~/dotvault/functions/*; do
+```
+if [ -d ~/dotvault ]; then
+  for file in ~/dotvault/*; do
     [ -f "$file" ] && source "$file"
   done
 fi
 ' >> ~/.bashrc && source ~/.bashrc
-
+```
 ---
 
 #### macOS (zsh)
 echo '
 # Load dotvault
-if [ -d ~/dotvault/functions ]; then
-  for file in ~/dotvault/functions/*; do
+```
+if [ -d ~/dotvault ]; then
+  for file in ~/dotvault/*; do
     [ -f "$file" ] && source "$file"
   done
 fi
 ' >> ~/.zshrc && source ~/.zshrc
-
+```
 ---
 
 ## 🧠 How it works
@@ -76,22 +79,6 @@ fi
   - environment variables
 
 This keeps your main config file clean and makes everything reusable.
-
----
-
-## ✨ Example
-
-Inside functions/git-aliases:
-
-alias gcm='git commit -m'
-alias gco='git checkout'
-alias gcob='git checkout -b'
-alias grs='git restore .'
-alias gss='git status --short'
-
-Now you can run:
-gcm "initial commit"
-gco main
 
 ---
 
