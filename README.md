@@ -38,7 +38,7 @@ You can keep adding:
 
 ### 1️⃣ Clone the repo
 ```
-git clone <your-repo-url> ~/dotvault
+git clone https://github.com/sachit3071/dotvault.git ~/dotvault
 ```
 ---
 
