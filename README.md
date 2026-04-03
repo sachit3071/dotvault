@@ -45,28 +45,30 @@ git clone https://github.com/sachit3071/dotvault.git ~/dotvault
 ### 2️⃣ Link it to your shell
 
 #### Linux (bash)
-echo '
-# Load dotvault
 ```
 if [ -d ~/dotvault ]; then
   for file in ~/dotvault/*; do
     [ -f "$file" ] && source "$file"
   done
 fi
-' >> ~/.bashrc && source ~/.bashrc
+```
+Then run 
+```
+~/.bashrc && source ~/.bashrc
 ```
 ---
 
 #### macOS (zsh)
-echo '
-# Load dotvault
 ```
 if [ -d ~/dotvault ]; then
   for file in ~/dotvault/*; do
     [ -f "$file" ] && source "$file"
   done
 fi
-' >> ~/.zshrc && source ~/.zshrc
+```
+Then run 
+```
+~/.zshrc && source ~/.zshrc
 ```
 ---
 
