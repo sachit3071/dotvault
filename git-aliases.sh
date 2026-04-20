@@ -27,6 +27,7 @@ alias ghprv='gh pr view'
 # Python / Dev Aliases
 # =========================
 alias va='source .venv/bin/activate'
+alias vc='python -m venv .venv'
 alias vd='deactivate'
 
 
