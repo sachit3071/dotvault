@@ -10,6 +10,7 @@ alias push='git push'
 alias pull='git pull'
 alias gcob='git checkout -b'
 alias grs='git restore .'
+alias gpum='git push -u origin HEAD'
 alias gss='git status --short'
 alias grv='git revert -m 1'
 alias gst='git stash'
@@ -26,6 +27,7 @@ alias ghprv='gh pr view'
 # =========================
 # Python / Dev Aliases
 # =========================
+alias vc='python3 -m venv .venv'
 alias va='source .venv/bin/activate'
 alias vc='python -m venv .venv'
 alias vd='deactivate'
