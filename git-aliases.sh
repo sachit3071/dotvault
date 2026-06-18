@@ -26,6 +26,7 @@ alias gcl='git clone'
 alias ghprcf='gh pr create --fill'
 alias ghprl='gh pr list'
 alias ghprv='gh pr view'
+alias ghasu='gh auth switch --user'
 
 # =========================
 # Python / Dev Aliases
